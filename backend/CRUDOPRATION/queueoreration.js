@@ -1,6 +1,6 @@
 import Queue from '../models/queueSchema.js';
 
-// Create a new Queue
+ 
 export const createQueue = async (req, res) => {
   try {
     const newQueue = new Queue(req.body);
@@ -11,7 +11,7 @@ export const createQueue = async (req, res) => {
   }
 };
 
-// Get all Queues
+ 
 export const getAllQueues = async (req, res) => {
   try {
     const queues = await Queue.find().populate('appointment_id');
@@ -21,7 +21,7 @@ export const getAllQueues = async (req, res) => {
   }
 };
 
-// Get a single Queue by ID
+ 
 export const getQueueById = async (req, res) => {
   try {
     const queue = await Queue.findById(req.params.id).populate('appointment_id');
@@ -32,7 +32,7 @@ export const getQueueById = async (req, res) => {
   }
 };
 
-// Update a Queue by ID
+ 
 export const updateQueue = async (req, res) => {
   try {
     const updatedQueue = await Queue.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
@@ -43,7 +43,7 @@ export const updateQueue = async (req, res) => {
   }
 };
 
-// Delete a Queue by ID
+ 
 export const deleteQueue = async (req, res) => {
   try {
     const deletedQueue = await Queue.findByIdAndDelete(req.params.id);

@@ -9,7 +9,7 @@ import {
 
 const router = express.Router();
 
-// Ticket routes
+ 
 router.post("/ticket", createTicket);
 router.get("/ticket", getAllTickets);
 router.get("/ticket/:id", getTicketById);

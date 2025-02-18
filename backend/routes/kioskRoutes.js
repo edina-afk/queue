@@ -1,10 +1,10 @@
- // kioskRoutes.js
+  
 import express from 'express';
-import { checkInUser } from '../controllers/kioskController.js'; // Import the check-in logic
+import { checkInUser } from '../controllers/kioskController.js';  
 
 const router = express.Router();
 
-// Route for user check-in via the kiosk
-router.post('/check-in', checkInUser); // The check-in endpoint
+ 
+router.post('/check-in', checkInUser);  
 
 export default router;

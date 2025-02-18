@@ -1,0 +1,168 @@
+  
+.footer-container {
+    width: 100%;
+    background-color: #232323;
+    color: #fff;
+    padding: 40px 20px;  
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;   
+  }
+  
+   
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  
+  .footer-logo {
+    flex: 1 1 250px;  
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  
+  .footer-links {
+    flex: 1 1 200px;  
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #00bcd4;
+  }
+  
+   
+  .footer-hours {
+    flex: 1 1 200px;  
+    margin-bottom: 20px;
+  }
+  
+  .footer-hours h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-hours ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-hours ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-hours ul li span {
+    display: inline-block;
+    width: 160px;
+    color: #fff;
+  }
+  
+  
+  .footer-contact {
+    flex: 1 1 250px;  
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-contact .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .footer-contact .contact-item svg {
+    font-size: 20px;
+    color: #00bcd4;
+    margin-right: 10px;
+  }
+  
+  .footer-contact .contact-item span {
+    color: #bbb;
+    font-size: 16px;
+  }
+  
+   
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-bottom p {
+    margin: 8px 0;
+  }
+  
+   
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  
+    .footer-links, .footer-hours, .footer-contact {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  
+    .footer-links ul li {
+      font-size: 14px;
+    }
+  
+    .footer-hours ul li span,
+    .footer-contact .contact-item span {
+      font-size: 14px;
+    }
+  }
+  
